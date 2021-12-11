@@ -1,0 +1,9 @@
+.fontStyle{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Kings', cursive;
+}
+
+.hero-img{
+  background-image: url(murloc-background.jpg);
+  background-position: bottom;
+}
