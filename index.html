@@ -18,11 +18,11 @@
   </head>
 
 
-  <body class="fontStyle">
+  <body class="fontStyle hero-img">
     <header>
-      <section class="container-fluid bg-primary border border-dark border-3">
+      <section class="container-fluid bg-primary border border-warning border-3">
         <div class="row pt-2">
-          <div class="col-12 text-center fw-bold ">
+          <div class="col-12 text-warning text-center fw-bold ">
             <h1>MURLOC SLAYER</h1>
           </div>
         </div>
@@ -30,44 +30,105 @@
     </header>
 
     <main>
-      <section class="container-fluid">
-        <div class="row flex-row">
-          <div class="col-md-3 border border-dark border-5 text-center hero-img">
-            <img src="kisspng-world-of-warcraft-hearthstone-youtube-heroes-of-th-5af3dab58c2355.883762221525930677574.png" alt="murloc" class="object-fit-contain img-fluid" onclick="slay()">
-          </div>
 
-          <div class="col-6 fs-1">
-              <i class="mdi mdi-gold mdi-48px">
-                =<span id="goldCount">0</span>
-              </i>
-              <div class="row flex-column">
-                <div class="col-md-5">
-                  <button id="bootButton" onclick="buyBoots()" disabled>Buy Boots</button>
-                </div>
-                <div class="col-md-5">
-                  <button onclick="" disabled>Buy Gloves</button>
-                </div>
-                <div class="col-md-5">
-                  <button onclick="" disabled>Buy Hemlet</button>
-                </div>
-                <div class="col-md-5">
-                  <button onclick="" disabled>Buy Shoulders</button>
-                </div>
-                <div class="col-md-5">
-                  <button onclick="" disabled>Buy Weapon</button>
-                </div>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row flex-column">
+              <div class="col">
+                <i class="mdi mdi-gold mdi-48px">
+                  =<span id="goldCount"> 0</span>
+                </i>
               </div>
+              <div class="col">
+                <i class="mdi mdi-cursor-default mdi-48px">
+                  =<span id="clickCount"></span>
+                </i>
+              </div>
+              <div class="col justify-content-start mt-5">
+                <img src="kisspng-world-of-warcraft-hearthstone-youtube-heroes-of-th-5af3dab58c2355.883762221525930677574.png" alt="murloc" class="object-fit-contain img-fluid popOut" onclick="slay()">
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-md-4 p-3">
+            <div class="row flex-column ">
+              <div class="col">
+                <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="bootButton" onclick="buyBoots()" disabled>Upgrade Boots<span class="px-5" id="bootCount"></span>
+                <div class="row">
+                  <div class="col text-start">
+                    <i class="mdi mdi-gold mdi-24px">=<span id="bootPricing"> 50</span></i>
+                  </div>
+                </div>
+                </button>
+              </div>
+              <div class="col mt-5">
+                <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="gloveButton" onclick="buyGloves()" disabled>Upgrade Gloves <span class="px-5" id="gloveCount"></span>
+                  <div class="row">
+                    <div class="col text-start">
+                      <i class="mdi mdi-gold mdi-24px">=<span id="glovePricing"> 100</span></i>
+                    </div>
+                </button>
+              </div>
+              <div class="col mt-5">
+                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="" onclick="" disabled>Upgrade Hemlet<span class="px-5" id=""></span>
+                  <div class="row">
+                    <div class="col text-start">
+                      <i class="mdi mdi-gold mdi-24px"></i>
+                    </div>
+                </button>
+              </div>
+              <div class="col mt-5">
+                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="" onclick="" disabled>Upgrade Shoulders<span class="px-5" id=""></span>
+                  <div class="row">
+                    <div class="col text-start">
+                      <i class="mdi mdi-gold mdi-24px"></i>
+                    </div>
+                </button>
+              </div>
+              <div class="col mt-5">
+                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="" onclick="" disabled>Upgrade Weapon<span class="px-5" id=""></span>
+                  <div class="row">
+                    <div class="col text-start">
+                      <i class="mdi mdi-gold mdi-24px"></i>
+                    </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3">
+            <div class="row flex-column">
+              <div class="col ">
+                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" onclick="warriorButton" disabled>Recruit A Warrior <span class="px-5" id="warriorCount"></span>
+                  <div class="row">
+                    <div class="col text-start">
+                      <i class="mdi mdi-gold mdi-24px">=<span id="warriorPricing"></span></i>
+                    </div>
+                </button>
+              </div>
+              <div class="col mt-5">
+                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" onclick="" disabled id="priestCount">Recruit A Priest <span class="px-5"></span>
+                  <div class="row">
+                    <div class="col text-start">
+                      <i class="mdi mdi-gold mdi-24px">=<span id="priestPricing"></span></i>
+                    </div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
 
 
-
     </main>
 
+    <footer>
+      <div class="container-fluid fixed-bottom">
+        <div class="row">
 
+        </div>
+      </div>
+    </footer>
 
 
 
