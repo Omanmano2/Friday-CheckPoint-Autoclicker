@@ -4,6 +4,16 @@
 }
 
 .hero-img{
-  background-image: url(murloc-background.jpg);
-  background-position: bottom;
+  background-image: url(big-murloc.jpg);
+  background-position: TOP;
+}
+
+
+.popOut{
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.popOut:hover{
+  transform: scale(1.05);
 }

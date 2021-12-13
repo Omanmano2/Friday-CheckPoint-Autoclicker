@@ -37,7 +37,7 @@
             <div class="row flex-column">
               <div class="col">
                 <i class="mdi mdi-gold mdi-48px">
-                  =<span id="goldCount"> 0</span>
+                  =<span id="goldCount">0</span>
                 </i>
               </div>
               <div class="col">
@@ -45,13 +45,13 @@
                   =<span id="clickCount"></span>
                 </i>
               </div>
-              <div class="col justify-content-start mt-5">
+              <div class="col justify-content-start mb-5">
                 <img src="kisspng-world-of-warcraft-hearthstone-youtube-heroes-of-th-5af3dab58c2355.883762221525930677574.png" alt="murloc" class="object-fit-contain img-fluid popOut" onclick="slay()">
               </div>
             </div>
           </div>
           <div class="col-md-4 p-3">
-            <div class="row flex-column ">
+            <div class="row flex-column">
               <div class="col">
                 <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="bootButton" onclick="buyBoots()" disabled>Upgrade Boots<span class="px-5" id="bootCount"></span>
                 <div class="row">
@@ -70,26 +70,26 @@
                 </button>
               </div>
               <div class="col mt-5">
-                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="" onclick="" disabled>Upgrade Hemlet<span class="px-5" id=""></span>
+                <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="helmetButton" onclick="buyHelmet()" disabled>Upgrade Helmet<span class="px-5" id="helmetCount"></span>
                   <div class="row">
                     <div class="col text-start">
-                      <i class="mdi mdi-gold mdi-24px"></i>
+                      <i class="mdi mdi-gold mdi-24px">=<span id="helmetPricing"> 200</i>
                     </div>
                 </button>
               </div>
               <div class="col mt-5">
-                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="" onclick="" disabled>Upgrade Shoulders<span class="px-5" id=""></span>
+                <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="shouldersButton" onclick="buyShoulders()" disabled>Upgrade Shoulders<span class="px-5" id="shouldersCount"></span>
                   <div class="row">
                     <div class="col text-start">
-                      <i class="mdi mdi-gold mdi-24px"></i>
+                      <i class="mdi mdi-gold mdi-24px">=<span id="shouldersPricing"> 400</i>
                     </div>
                 </button>
               </div>
               <div class="col mt-5">
-                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="" onclick="" disabled>Upgrade Weapon<span class="px-5" id=""></span>
+                <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="weaponButton" onclick="buyWeapon()" disabled>Upgrade Weapon<span class="px-5" id="weaponCount"></span>
                   <div class="row">
                     <div class="col text-start">
-                      <i class="mdi mdi-gold mdi-24px"></i>
+                      <i class="mdi mdi-gold mdi-24px">=<span id="weaponPricing"> 800</i>
                     </div>
                 </button>
               </div>
@@ -98,18 +98,18 @@
           <div class="col-md-4 p-3">
             <div class="row flex-column">
               <div class="col ">
-                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" onclick="warriorButton" disabled>Recruit A Warrior <span class="px-5" id="warriorCount"></span>
+                <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="warriorButton" onclick="WarriorAutoClick()" disabled>Recruit A Warrior <span class="px-5" id="warriorCount"></span>
                   <div class="row">
                     <div class="col text-start">
-                      <i class="mdi mdi-gold mdi-24px">=<span id="warriorPricing"></span></i>
+                      <i class="mdi mdi-gold mdi-24px">=<span id="warriorPricing">250</span></i>
                     </div>
                 </button>
               </div>
               <div class="col mt-5">
-                <button class="col-7 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" onclick="" disabled id="priestCount">Recruit A Priest <span class="px-5"></span>
+                <button class="col-8 p-1 fs-4 fw-bold text-start text-warning border-warning bg-primary popOut" id="priestButton" onclick="PriestAutoClick()" disabled>Recruit A Priest <span class="px-5" id="priestCount"></span>
                   <div class="row">
                     <div class="col text-start">
-                      <i class="mdi mdi-gold mdi-24px">=<span id="priestPricing"></span></i>
+                      <i class="mdi mdi-gold mdi-24px">=<span id="priestPricing">500</span></i>
                     </div>
                 </button>
               </div>
@@ -123,14 +123,12 @@
     </main>
 
     <footer>
-      <div class="container-fluid fixed-bottom">
-        <div class="row">
-
+      <div class="container-fluid  bg-primary">
+        <div class="row justify-content-center p-4 border border-3 border-warning fs-4 fw-bold text-warning">
+          Made By Owen Manmano
         </div>
       </div>
     </footer>
-
-
 
 
 
