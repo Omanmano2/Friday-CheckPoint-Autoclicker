@@ -52,6 +52,7 @@ let autoUpgrades = {
 let gold = 0
 
 
+//find a way to add to the counter without using a call to each item -> ${}
 function drawGoldPerClick(){
   document.getElementById('clickCount').innerHTML = (1 + (clickUpgrades.boots.quantity * clickUpgrades.boots.multiplier) +(clickUpgrades.gloves.quantity * clickUpgrades.gloves.multiplier) + (clickUpgrades.helmet.quantity * clickUpgrades.helmet.multiplier) + (clickUpgrades.shoulders.quantity * clickUpgrades.shoulders.multiplier) + (clickUpgrades.weapon.quantity * clickUpgrades.weapon.multiplier))
 }
@@ -70,6 +71,9 @@ function slay(){
   drawWeaponButton()
 }
 
+
+
+//Create 1 Function for the draw.item.Button using a template and for in loop. Do the same for the autoupgrades
 function drawBootButton(){
   if (gold >= clickUpgrades.boots.price) {
     document.getElementById('bootButton').disabled = false
